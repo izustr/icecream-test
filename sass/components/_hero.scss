@@ -1,0 +1,95 @@
+.hero {
+	background-color: var(--accent-background);
+	background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/background/mobile/hero1x-mobile.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 118px 0;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/background/mobile/hero2x-mobile.jpg);
+	}
+
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/background/tablet/hero1x-tablet.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/background/tablet/hero2x-tablet.jpg);
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		height: 600px;
+		padding: 200px 0;
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/background/deskopt/hero1x-deskopt.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/background/deskopt/hero2x-deskopt.jpg);
+		}
+	}
+}
+.hero__title {
+	@include font(900, 26px, 1.62, 0.06em);
+	text-transform: uppercase;
+	color: var(--accessary-color);
+	max-width: 365px;
+	text-align: center;
+	margin: 0 auto;
+
+	@media screen and (min-width: 1200px) {
+		@include font(900, 44px, 1.37, 0.06em);
+		max-width: 696px;
+	}
+}
+.hero__button {
+	@include font(700, 16px, 1.88, 0.06em);
+	box-shadow: var(--box-shadow-hero);
+	color: var(--accessary-color);
+	background-color: var(--accent-color);
+	margin: 0 auto;
+	padding: 10px 41px;
+	margin-top: var(--item-margin);
+}

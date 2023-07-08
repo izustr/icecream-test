@@ -1,0 +1,21 @@
+@mixin flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin font($fw, $fs, $lh, $ls) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+@mixin font-normal($fs, $lh, $ls) {
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+@mixin transition($tp1, $tp2, $td, $ttf) {
+	transition-property: $tp1, $tp2;
+	transition-duration: $td;
+	transition-timing-function: $ttf;
+}

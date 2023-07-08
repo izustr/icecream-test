@@ -1,0 +1,133 @@
+.page-header--line {
+	border-bottom: var(--border-bottom-color) solid 1px;
+}
+.page-header__container {
+	@media screen and (max-width: 767.9px) {
+		position: relative;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		display: flex;
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+}
+
+.page-header__nav {
+	display: flex;
+	margin-right: auto;
+}
+.page-header__nav-list {
+	display: flex;
+	align-items: center;
+
+	@media screen and (max-width: 767.9px) {
+		display: none;
+	}
+}
+.page-header__nav-item {
+	margin-right: 46px;
+	display: inline;
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		margin-right: 60px;
+		display: flex;
+	}
+}
+.page-header__contacts-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: 767.9px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		margin-left: 101px;
+	}
+}
+.page-header__contact-item {
+	margin-right: var(--item-margin);
+	&:last-child {
+		margin-right: 0;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		margin-right: 0;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.page-header__nav-link {
+	@include font(500, 14px, 1.15, 0.02em);
+	color: var(--text-color);
+	transition: color 250ms var(--cubic-bezier);
+	position: relative;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+	&.page-header__nav-link--current-link {
+		color: var(--accent-color);
+	}
+}
+.page-header__contact-link {
+	@include font(500, 14px, 1.15, 0.02em);
+	color: var(--secondary-text-color);
+	display: flex;
+	align-items: center;
+	transition: color 250ms var(--cubic-bezier);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		@include font(500, 12px, 1.17, 0.02em);
+	}
+}
+
+.page-header__icon {
+	fill: currentColor;
+	margin-right: 10px;
+
+	@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+		width: 14px;
+		height: 10px;
+		margin-right: 8px;
+
+		&--tel {
+			width: 10px;
+			height: 14px;
+		}
+	}
+}
+
+.page-header__nav-link--current-link::after {
+	color: var(--accent-color);
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	bottom: -32px;
+	background-color: var(--accent-color);
+	content: "";
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+}

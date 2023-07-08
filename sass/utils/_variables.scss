@@ -1,0 +1,24 @@
+:root {
+	--text-color: #212121;
+	--secondary-text-color: #757575;
+	--accent-color: #2196f3;
+	--accessary-color: #ffffff;
+	--accent-background: #2f303a;
+	--secondary-background: #f5f4fa;
+
+	--icon-fill-color: #afb1b8;
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway", sans-serif;
+	--cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+	--border-color: #eeeeee;
+	--border-bottom-color: #ececec;
+	--logo-color: #000000;
+	--box-shadow-hero: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	--box-shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	--box-shadow-filter: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	--box-shadow-gallery: 0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	--item-margin: 30px;
+}

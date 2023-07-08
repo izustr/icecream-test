@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	color: var(--text-color);
+	background-color: var(--accessary-color);
+	font-family: var(--main-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+address {
+	font-style: inherit;
+}
+button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	font-family: inherit;
+}
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.link {
+	text-decoration: none;
+}
